@@ -1,0 +1,21 @@
+.add {
+    border: 2px solid #f2f2f2;
+    border-radius: 50%;
+    position: absolute;
+    color: white;
+    margin-top: 3%;
+    margin-left: 80%;
+    padding: 13px 20px;
+}
+
+.bulk {
+    border: 2px solid #f2f2f2;
+    border-radius: 50%;
+    position: absolute;
+    color: white;
+    padding: 25px 25px;
+    font-size: 30px;
+    cursor: pointer;
+    margin-top: 3.0%;
+    margin-left: 87%;
+}

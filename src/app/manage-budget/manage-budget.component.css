@@ -1,0 +1,9 @@
+.add {
+    border: 2px solid #f2f2f2;
+    border-radius: 50%;
+    position: absolute;
+    color: white;
+    margin-top: 3%;
+    margin-left: 70%;
+    padding: 13px 20px;
+}

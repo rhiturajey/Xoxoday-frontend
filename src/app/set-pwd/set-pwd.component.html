@@ -1,0 +1,26 @@
+<div style="border: 2px solid lightgrey; background-color: white; width: 30%;margin-top: 3% ; margin-left: 35%"
+    class="container">
+    <img src="./assets/images/psw.jpeg" style="width: 70%; margin-left: 15%">
+    <p style="text-align: center">Set Your Password</p>
+
+    <div class=" row" class="form-group">
+        <form [formGroup]="password" (ngSumbit)="onSignIn()">
+            <input type="password" placeholder="  Password" class="form-control col-sm-10" formControlName="pass"
+                style=" margin-left: 9%; height: 37px">
+            <br>
+            <br>
+            <input type="password" placeholder="  Confirm Password" class="form-control col-sm-10"
+                formControlName="cnf_pass" style=" margin-left: 9%; height: 37px">
+            <br>
+            <button type="submit" class="btn col-sm-10 " (click)="onSignIn()" routerLink="/sign-in"
+                style=" height:37px; border: none; margin-left: 9%; margin-top:20px; color:white; background-color: rgb(255, 115, 0)">
+                <strong>Validate</strong>
+            </button>
+            
+        </form>
+    </div>
+    <p style="text-align: center; margin-left:6% " class="col-sm-11">This password should be minimum 8
+        characters long and should contain at least one capital letter, one special character among '! @ # $ % ^ * &'
+        and one numeric character.</p>
+
+</div>

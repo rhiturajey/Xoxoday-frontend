@@ -1,0 +1,88 @@
+<div class="scrollmenu">
+    <div class="row" style="border-bottom:2px solid blue;;margin-left: 0.5%; ">
+        <div class="col-sm-1">
+            <img style="width: 100%" src="../../assets/images/profile.jpeg">
+        </div>
+        <div class="col-sm-8">
+            <p style="font-size: 25px;padding-top: 0%;"><b><b>+</b>Add Employee</b></p>
+        </div>
+    </div>
+    <br>
+
+    <div class="new ">
+        <p><b>Add below details for the new employee</b></p>
+        <div class="row forms ">
+            
+            <div class="col col1">
+                <label>
+                    First Name *<br>
+                    <input class="in" type="text" [formControl]="fname">
+                </label>
+                <br>
+                <label>
+                    Official Email Id *<br>
+                    <input class="in" type="text" [formControl]="Email">
+                </label>
+                <label>
+                    Employee Id *<br>
+                    <input class="in" type="text" [formControl]="emp-id">
+                </label>
+                <br>
+            </div>
+            <div class="col">
+                <label>
+                    Last Name *<br>
+                    <input class="in" type="text" [formControl]="lname">
+                </label>
+                <label>
+                    User Access Level *<br>
+                    <input class="in" type="text" placeholder="User Access Level" [formControl]="acess_level">
+                </label>
+
+            </div>
+        </div>
+        <div id="accordion">
+            <label>
+                <b>
+                    <a data-toggle="collapse" href="#professional">
+                        Add Professional details <b>></b>
+                    </a>
+                </b>
+            </label>
+        </div>
+        <div id="professional" class="collapse col-sm-12 " data-parent="#accordion">
+
+            <label>
+                Department<br>
+                <input class="in" type="text" placeholder="Department" [formControl]="department">
+            </label><br>
+            <label>
+                Designation<br>
+                <input class="in" type="text" placeholder="Designation" [formControl]="designation">
+            </label>
+        </div>
+        <div id="accordion">
+            <label>
+                <b>
+                    <a data-toggle="collapse" href="#personal">
+                        Add Personal details <b>></b>
+                    </a>
+                </b>
+            </label>
+        </div>
+        <div id="personal" class="collapse col-sm-12 " data-parent="#accordion">
+
+            <label>
+                Date of Birth<br>
+                <input class="in" type="text" placeholder="D.O.B." [formControl]="department">
+            </label><br>
+        </div>
+        <div style="padding-bottom: 4%">
+            <button type="button" class="btn"
+                style="margin-left: 75%;background-color: white;;border-radius: 5%">Cancel</button>
+
+            <button type="button" class="btn btn-primary"
+                style="margin-left: 10px;border-radius: 5%">Submit</button>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,41 @@
+<div class="row" style="border-bottom:2px solid blue;;margin-left: 0.5%; ">
+
+    <h6 style="font-size: 25px;padding-top: 0%;"><b>Greetings Automation</b></h6>
+
+</div>
+<br>
+<div class="greet">
+    <form [formGroup]="GiftForm" (ngSubmit)="onSubmit()">
+        <div>
+            <h6><b>What type of event do you want to setup this gift for?</b></h6>
+        </div>
+        <br>
+        <div class="radio">
+
+            <div >
+                <input class="rad" id="Birthday" type="radio" value="Birthday" name="gifts" formControlName="gifts"
+                    checked>
+                <label for="Birthday">Birthday</label>
+            </div>
+            <div>
+                <input class="rad" id="Work Anniversary" type="radio" value="Work Anniversary" name="gifts"
+                    formControlName="gifts">
+                <label for="Work Anniversary">Work Anniversary</label>
+            </div>
+
+            <div>
+                <input class="rad" id="Welcome Onboard(For new Joinees)" type="radio"
+                    value="Welcome Onboard(For new Joinees)" name="gifts" formControlName="gifts">
+                <label for="Welcome Onboard(For new Joinees)">Welcome Onboard(For new
+                    Joinees)</label>
+            </div>
+        </div>
+        <!-- Showing error method -->
+        <div *ngIf="isSubmitted && myForm.errors?.required">
+            <p>Please select either value</p>
+        </div>
+
+        <button type="button" class="btn cancel" routerLink="/side-nav/automated-greetings">Cancel</button>
+        <button type="submit" class="btn btn-primary">Next</button>
+    </form>
+</div>

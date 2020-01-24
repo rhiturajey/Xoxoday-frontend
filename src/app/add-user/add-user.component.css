@@ -1,0 +1,36 @@
+.new {
+    background-color: white;
+    padding-top: 2.5%;
+    padding-left: 2%;
+    box-shadow: inset 2px 2px 2px lightgrey;
+    margin-left: 1%;
+    height: fit-content;
+    border-bottom: 1px solid lightgrey;
+}
+.scrollmenu{
+    height: 90%;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+.forms {
+    padding-top: 3 .5%;
+}
+label {
+    font-size: 10px;
+    margin-bottom: 40px;
+}
+.in {
+    border: none;
+    border-bottom: 1px solid grey;
+    width: 140%;
+    height: 35px;
+    font-size: 20px;
+}
+.col1 {
+    padding-top: 0%;
+    padding-bottom: 0;
+}
+a{
+    text-decoration: none;
+    color: black;
+}

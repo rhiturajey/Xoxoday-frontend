@@ -1,0 +1,51 @@
+.logo {
+    margin-left: 10%;
+    margin-bottom: 10%;
+    margin-top: 40%;
+}
+
+.log {
+    height: 100%;
+    float: center;
+    border-right: 2px solid red;
+}
+
+.login {
+    margin-top: 15%;
+    border: 2px solid lightgrey;
+    background-color: white;
+    border-bottom: 2px solid lightgrey;
+    width: 50%;
+    height: 250px;
+    margin-left: 25%;
+}
+
+.email {
+    border: none;
+    margin-top: 13%;
+    color: rgb(48, 100, 167);
+    border-bottom: 1px solid lightblue;
+}
+
+.pass {
+    border: none;
+    margin-top: 2%;
+    color: rgb(48, 100, 167);
+    border-bottom: 1px solid lightblue;
+}
+
+.signin {
+    color: white;
+    background-color: rgb(61, 61, 207);
+    border: 1px solid rgb(61, 61, 207);
+}
+
+.ts {
+    text-decoration: none;
+    text-align: center;
+    font-size: 15px;
+}
+
+#p {
+    color: rgb(54, 54, 236);
+}

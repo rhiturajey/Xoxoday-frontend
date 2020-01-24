@@ -1,0 +1,28 @@
+
+a{
+    text-align: center;
+}
+.col1 {
+    padding-top: 0%;
+    padding-bottom: 0;
+}
+.tab{
+    margin-top: 10px;
+    font-size: 16px;
+    color:black;
+    text-decoration: none;
+    border:none;
+    border-bottom: 2px solid white;
+    padding-bottom: 10px;
+}
+.tab:focus{
+
+    border:none;
+    border-bottom: 2px solid blue;
+}
+.info{
+    background-color: white;
+    margin-left: 0.5%;
+    height: fit-content;
+
+}

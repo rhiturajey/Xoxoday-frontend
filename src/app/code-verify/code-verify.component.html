@@ -1,0 +1,39 @@
+<div class="row" style="padding-bottom:2%">
+    <div class="col-sm-12 col-lg-1"
+        style="border: 2px solid lightgrey; width: 35%;padding-bottom:3% ;margin-top: 3% ; margin-left: 35%;background-color: white"
+        class="container">
+        <div>
+            <img src="../../assets/images/verificationr-code-step.svg" style="width: 70%; margin-left: 15%">
+        </div>
+        <div class="row">
+            <div class="col-sm-12">
+                <h3 style="text-align:center ;">Enter the verification code</h3>
+            </div>
+            <div class="col-sm-12">
+                <p style="text-align:center">A 6 digit verification code has been sent<br>
+                    to the email id you provided.</p>
+            </div>
+            <br>
+            <br>
+        </div>
+        <div  style="background-color: whites">
+            <form (ngSubmit)="onVerify()" [formGroup]="form">
+
+                <div class="row">
+                    <div class="form-group col-sm-2 "  *ngFor="let input of formInput;  index as i">
+                        <input #formRow type="text" style="width: 100%;padding: 0;margin: 0;text-align: center;" formControlName="{{input}}" class="form-control" maxlength="1"
+                            (keyup)="keyUpEvent($event, i)">
+                    </div>
+                </div>
+                <div class="row">
+                    <button type="submit" class="btn btn-lg col-sm-10"
+                        style="margin-left: 10%; border: none;font-size: 20px;;height: 37px; margin-top:20px; width: 80%; color: white; background-color: rgb(255, 115, 0)">VERIFY</button>
+                </div>
+
+            </form>
+            <br>
+        </div>
+            <p style="text-align: center">Didn't receive the code?</p>
+        <button type=button class="btn" style="text-decoration: none; margin-left: 30%; color: blue;" (click)="otp($event)">Resend Code</button>
+    </div>
+ </div> 
